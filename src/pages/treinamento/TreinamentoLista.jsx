@@ -10,7 +10,7 @@ import { FcUp } from "react-icons/fc";
 import swal from 'sweetalert';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
-
+import TrackChangesIcon from '@mui/icons-material/TrackChanges';
 
 const TreinamentoLista = () => {
 
@@ -32,11 +32,10 @@ const TreinamentoLista = () => {
     
   return (
     <div>
-        <div className="text-center">
-          <h1 id='inicio'>Lista De Navios nos Treinamentos</h1>
-        </div>
+      <div style={{background: '#000000'}} className="text-center">
+        <h1 id='inicio'><TrackChangesIcon sx={{ fontSize: 50 }} color="primary"/>Lista De Navios nos Treinamentos</h1>
+      </div>
     {treinamento.length === 0 && <h1><Spinner animation="border" variant="success" /> Carregando... </h1>}
-
     <Container>
       <div className="text-center">
         <Link className='btn btn-success mb-3 butao' to={'/treinamento/create'}><AiOutlinePlus /> Inserir</Link>

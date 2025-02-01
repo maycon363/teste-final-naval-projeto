@@ -9,7 +9,7 @@ import { AiOutlineRollback } from 'react-icons/ai'
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
 import swal from 'sweetalert';
-
+import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 
 const MissaoLista = () => {
 
@@ -29,13 +29,12 @@ const MissaoLista = () => {
         }
       }
 
-      return (
-       <div>
-        <div className="text-center">
-          <h1 id='inicio'>Lista De Navios em Missão</h1>
-        </div>
+  return (
+    <div>
+      <div style={{background: '#000000'}} className="text-center">
+        <h1 id='inicio'><PrivacyTipIcon sx={{ fontSize: 50 }} color="primary"/>Lista De Navios em Missão</h1>
+      </div>
     {missao.length === 0 && <h1><Spinner animation="border" variant="success" /> Carregando... </h1>}
-
     <Container>
       <div className="text-center">
         <Link className='btn btn-success mb-3 butao' to={'/missao/create'}><AiOutlinePlus /> Inserir</Link>

@@ -24,13 +24,13 @@ const ListaFrota = () => {
   return (
     <div>
         <div style={{background: '#1C1C1C', color: 'white'}} className="text-center mb-2">
-            <h1 id='inicio'><GiShipBow/> Lista Geral dos Navios</h1>
+          <h1 id='inicio'><GiShipBow/> Lista Geral dos Navios</h1>
         </div>
-        <div className='para'>
-                <ReactPlayer playing={true} loop={true} controls={false} url='https://youtu.be/gCfC1UST8p8' />
-            </div>
-        <div className="text-center mb-3">
-          <h1><IoMdConstruct style={{background: 'white', color: 'black', borderRadius: '25px'}} /> Lista dos Navios em Construção</h1>
+        <div className='para mb-3'>
+          <ReactPlayer playing={true} loop={true} controls={false} url='https://youtu.be/gCfC1UST8p8' />
+        </div>
+        <div className="text-center mb-4">
+          <h1 style={{background: '#000000'}}><IoMdConstruct style={{background: 'white', color: 'black', borderRadius: '25px'}} /> Lista dos Navios em Construção</h1>
           <Link className='btn btn-success butao' to={'/construcao/create'}><AiOutlinePlus/> Inserir</Link>
         </div>
         <Table variant="dark" striped bordered hover>
@@ -61,7 +61,7 @@ const ListaFrota = () => {
           <a href="#inicio"><button class="botao" > <FcUp /></button></a>
         </div>
         <div className="text-center">
-          <h1><IoIosBuild style={{ background: 'white', color: 'black', borderRadius: '25px'}}/> Lista dos Navios em Manutenção</h1>
+          <h1 style={{background: '#000000'}}><IoIosBuild style={{ background: 'white', color: 'black', borderRadius: '25px'}}/> Lista dos Navios em Manutenção</h1>
           <Link className='btn btn-success butao' to={'/manutencao/create'}><AiOutlinePlus/> Inserir</Link>
         </div>
         <Table variant="dark" className="mt-3" striped bordered hover>
@@ -93,7 +93,7 @@ const ListaFrota = () => {
           <a href="#inicio"><button class="botao" > <FcUp /></button></a>
         </div>
         <div className="text-center">
-            <h1><GiBattleship style={{ background: 'white', color: 'black', borderRadius: '25px'}}/> Lista dos Navios em Missões</h1>
+            <h1 style={{background: '#000000'}}><GiBattleship style={{ background: 'white', color: 'black', borderRadius: '25px'}}/> Lista dos Navios em Missões</h1>
             <Link className='btn btn-success mb-3 butao' to={'/missao/create'}><AiOutlinePlus /> Inserir</Link>
           </div>
           <Table variant="dark" striped bordered hover>
@@ -127,7 +127,7 @@ const ListaFrota = () => {
             <a href="#inicio"><button class="botao" > <FcUp /></button></a>
           </div>
           <div className="text-center">
-            <h1><RiShip2Fill style={{ background: 'white', color: 'black', borderRadius: '25px'}}/> Lista de Navio em Serviço</h1>
+            <h1 style={{background: '#000000'}}><RiShip2Fill style={{ background: 'white', color: 'black', borderRadius: '25px'}}/> Lista de Navio em Serviço</h1>
             <Link className='btn btn-success mb-3 butao' to={'/servico/create'}><AiOutlinePlus /> Inserir</Link>
           </div>
           <Table variant="dark" striped bordered hover>
@@ -172,7 +172,7 @@ const ListaFrota = () => {
             <a href="#inicio"><button class="botao" > <FcUp /></button></a>
           </div>
           <div className="text-center">
-          <h1><GiIronHulledWarship style={{ background: 'white', color: 'black', borderRadius: '25px'}}/> Lista dos Navios no Treinamento</h1>
+          <h1 style={{background: '#000000'}}><GiIronHulledWarship style={{ background: 'white', color: 'black', borderRadius: '25px'}}/> Lista dos Navios no Treinamento</h1>
           <Link className='btn btn-success butao' to={'/treinamento/create'}><AiOutlinePlus/> Inserir</Link>
         </div>
         <Table variant="dark" className="mt-3" striped bordered hover>

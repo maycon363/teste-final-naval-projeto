@@ -3,11 +3,13 @@ import { Card, Col, Container, ListGroup, Row, Spinner} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import ServicoService from '../../services/academico/ServicoService'
 import { Alert, Chip } from '@mui/material'
-import { AiOutlineRollback, AiOutlinePlus } from 'react-icons/ai'
+import { AiOutlineRollback } from 'react-icons/ai'
 import { FcUp } from "react-icons/fc";
 import swal from 'sweetalert';
 import DeleteIcon from '@mui/icons-material/Delete';
+import AddModeratorIcon from '@mui/icons-material/AddModerator';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
+import SecurityIcon from '@mui/icons-material/Security';
 
 const ServicoLista = () => {
 
@@ -29,14 +31,14 @@ const ServicoLista = () => {
 
   return (
     <div>
-      <div className="text-center">
-        <h1 id='inicio'>Lista De Navios em Serviço</h1>
+      <div style={{background: '#000000'}} className="text-center">
+        <h1 id='inicio'><SecurityIcon sx={{ fontSize: 50 }} color="primary"/>Lista De Navios em Serviço</h1>
       </div>
     {servico.length === 0 && <h1><Spinner animation="border" variant="success" /> Carregando... </h1>}
 
     <Container>
       <div className="text-center">
-        <Link className='btn btn-success mb-3 butao' to={'/servico/create'}><AiOutlinePlus /> Inserir</Link>
+        <Link className='btn btn-success mb-3 butao' to={'/servico/create'}><AddModeratorIcon /> Inserir</Link>
       </div>
       <Row>
         {

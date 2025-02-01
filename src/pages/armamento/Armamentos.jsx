@@ -8,6 +8,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import { mask } from 'remask';
 import ArmamentosService from '../../services/academico/ArmamentosService';
 import armamentoValidator from '../../validators/armamentoValidator';
+import PaidIcon from '@mui/icons-material/Paid';
 
 const Armamentos = () => {
 
@@ -49,7 +50,7 @@ const Armamentos = () => {
             <div>
                 <Form className="mb-3" style={{background: '#1C1C1C', color: 'white', paddingTop: "8px", paddingLeft: "12px", paddingRight: "12px", paddingBottom: "10px"}}>          
                     <div className="text-center">
-                        <h1>Inserir Armamento</h1>
+                        <h1><PaidIcon sx={{ fontSize: 60 }} color="primary" />Inserir Armamento</h1>
                     </div>
                     <Form.Group className="mb-3" controlId="ships">
                         <Form.Select placeholder="Selecione" aria-label="Default select example" {...register("imges", armamentoValidator.imges)}>
@@ -106,10 +107,12 @@ const Armamentos = () => {
                         />
                     </InputGroup>
                     {errors.quantidade && <p style={{color: "OrangeRed", background: "Black", border: "15px", borderBlock: "10px"}}>{errors.quantidade.message}</p>}
+                    <div className="text-center mb-2 d-grid gap-2">
+                        <Button onClick={handleSubmit(salvar)} size="lg" variant="success"><FaCheck /> Salvar</Button>{' '}
+                    </div>
                 </Form>
             </div>
-            <div className="text-center mb-5" >
-                <Button onClick={handleSubmit(salvar)} className='btn btn-success butao'><FaCheck /> Salvar</Button>{' '}
+            <div className="text-center mb-5" >          
                 <Link to={-1} className='btn btn-danger butao'><BsArrowLeft />  Voltar</Link>
             </div>
         </div>

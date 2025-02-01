@@ -21,7 +21,6 @@ import Armamentos from "./pages/armamento/Armamentos";
 import SolicitarServico from "./pages/SolicitarServico";
 import Infor from "./pages/Infor";
 
-
 function App() {
   return (
     <div>
@@ -63,8 +62,7 @@ function App() {
               <Route path="/infor" element={<Infor />} />
 
             </Routes>
-          </Container>
-            
+          </Container>  
       </BrowserRouter>    
     </div>
   );

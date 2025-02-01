@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 
+
 const data = [
     {
       src: 'https://tecnodefesa.com.br/wp-content/uploads/2021/06/d5bde4ca-abae-4e01-8ca5-aad5c2ec1462.jpg',
@@ -48,7 +49,7 @@ const SolicitarServico = () => {
   return (
     <Grid>
       <Row>
-        <div className='text-center mb-2'>
+        <div style={{background: '#000000', color: 'white',}} className='text-center mb-2'>
           <h1>Solicitações de Serviços</h1>
         </div>
           {

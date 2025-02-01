@@ -3,15 +3,15 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { Spinner, Container, ListGroup, Row, Col, Card  } from 'react-bootstrap'
 import { Chip } from '@mui/material'
-import {AiOutlineRollback} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import { FcUp } from "react-icons/fc";
 import swal from 'sweetalert';
 import { AiOutlinePlus } from 'react-icons/ai'
 import CategoriaService from '../../services/academico/ConstrucaoService';
-import DeleteIcon from '@mui/icons-material/Delete';
-import EditRoundedIcon from '@mui/icons-material/EditRounded';
-
+import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
+import BorderColorIcon from '@mui/icons-material/BorderColor';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 
 const ConstrucaoLista = () => {
 
@@ -32,15 +32,14 @@ const ConstrucaoLista = () => {
     
   return (
     <div>
-        <div className="text-center">
-          <h1 id='inicio'>Lista De Navios em Construção</h1>
-        </div>
+    <div style={{background: '#000000'}} className="text-center">
+      <h1 id='inicio'><ShoppingCartIcon sx={{ fontSize: 50 }} color="primary" />Lista De Navios em Construção</h1>
+    </div>
     {construcao.length === 0 && <h1><Spinner animation="border" variant="success" />Carregando... </h1>}
-
     <Container>
-    <   div className="text-center">
-          <Link className='btn btn-success mb-2 butao' to={'/construcao/create'}><AiOutlinePlus /> Inserir</Link>
-        </div>
+      <div className="text-center">
+        <Link className='btn btn-success mb-2 butao' to={'/construcao/create'}><AiOutlinePlus /> Inserir</Link>
+      </div>
       <Row>
         {
           construcao.map((item, i)=> (
@@ -70,25 +69,25 @@ const ConstrucaoLista = () => {
               <div className='mb-3 iconess'>
                 <Link to={'/construcao/' + i}>
                     <Chip
-                      icon={<EditRoundedIcon />}
+                      icon={<BorderColorIcon />}
                       label="Editar"
                       color="success"
                     />
                 </Link>{' '}
                             
-              <Chip
-                  icon={<DeleteIcon />}
+                <Chip
+                  icon={<RemoveShoppingCartIcon />}
                   color="error"
                   label="Deletar"
                   onClick={() => apagar(i)}
-                  />
-               </div>
+                />
+              </div>
             </Col>
           ))
         }
       </Row>
       <div className='text-center mb-3'>
-          <Link to={-1} className='btn btn-danger'><AiOutlineRollback/> Voltar</Link>
+          <Link to={-1} className='btn btn-danger'><KeyboardBackspaceIcon/> Voltar</Link>
       </div>
       <div className='text-center mb-3'>
         <a href="#inicio"><button class="botao" > <FcUp /></button></a>

@@ -69,7 +69,7 @@ const Infor = () => {
   return (
     <Grid>
         <Row>
-            <div className='text-center'>
+            <div style={{background: '#000000', color: 'white',}} className='text-center'>
                 <h1>Informações de todos os tipos de Navios de guerra</h1>
             </div>
             {
@@ -89,14 +89,16 @@ const Infor = () => {
                         {item.text}
                         </Typography>
                         <div className='estrela'>
-                            <Stack spacing={5}>
-                                <Rating  style={{  background: '#1E90FF' }} name="size-large" defaultValue={1} size="large" />
+                            <Stack spacing={3}>
+                                <Rating style={{background: '#1E90FF' }} name="size-large" defaultValue={1} size="large" />
                             </Stack>
                         </div>
-                        <CardActions>
-                            <Button size="small">Compartilhar</Button>
-                            <Button size="small">Saiba mais...</Button>
-                        </CardActions>
+                        <div>
+                            <CardActions>
+                                <Button size="small">Compartilhar</Button>
+                                <Button size="small">Saiba mais...</Button>
+                            </CardActions>
+                        </div>                
                     </Card>
                 </Col>
             ))

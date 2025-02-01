@@ -8,7 +8,7 @@ import ReactPlayer from 'react-player'
 import construcaoValidator from '../../validators/construcaoValidator';
 import ConstrucaoService from '../../services/academico/ConstrucaoService';
 import { mask } from 'remask';
-
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Construcao = () => {
     
@@ -51,7 +51,7 @@ const Construcao = () => {
             </div>   
             <Form className="mb-3" style={{background: '#1C1C1C', color: 'white', paddingTop: "8px", paddingLeft: "12px", paddingRight: "12px", paddingBottom: "10px"}}>
               <div className="text-center">
-                <h1>Inserir Navio para Construção</h1>
+                <h1><ShoppingCartIcon sx={{ fontSize: 60 }} color="primary" />Inserir Navio para Construção</h1>
               </div>
               <Form.Group className="mb-3" controlId="imges">
                 <Form.Select aria-label="Default select example" {...register("imges", construcaoValidator.imgs)}>
@@ -131,9 +131,11 @@ const Construcao = () => {
                 />
               </InputGroup>
               {errors.custo && <p style={{color: "OrangeRed", background: "Black", border: "15px", borderBlock: "10px"}}>{errors.custo.message}</p>}
+              <div className="text-center mb-2 d-grid gap-2">
+                  <Button onClick={handleSubmit(salvar)} size="lg" variant="success"><FaCheck /> Salvar</Button>
+              </div>            
             </Form>
             <div className="text-center mb-5" >
-                <Button onClick={handleSubmit(salvar)} className=' btn btn-success butao'><FaCheck /> Salvar</Button>{' '}
                 <Link to={-1} className='btn btn-danger butao'><BsArrowLeft />  Voltar</Link>
             </div> 
         </div>

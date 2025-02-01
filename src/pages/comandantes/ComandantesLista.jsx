@@ -1,19 +1,17 @@
-import React from 'react'
-import { useEffect } from 'react'
-import { useState } from 'react'
-import { Spinner, Container, Row, Col, Card, ListGroup } from 'react-bootstrap'
-import {AiOutlineRollback} from 'react-icons/ai'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { Spinner, Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
+import {AiOutlineRollback} from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 import swal from 'sweetalert';
-import { AiOutlinePlus } from 'react-icons/ai'
-import ComandatesService from '../../services/academico/ComandatesService'
+import ComandatesService from '../../services/academico/ComandatesService';
 import { FcUp } from "react-icons/fc";
-import { Chip } from '@mui/material'
+import { Chip } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
-import { deepOrange } from '@mui/material/colors';
+import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
 
 const ComandantesLista = () => {
     const [comandante, setConmandante] = useState([])
@@ -33,14 +31,14 @@ const ComandantesLista = () => {
 
   return (
     <div>
-        <div className="text-center">
-          <h1 id='inicio'>Lista De Comandantes de Esquadra</h1>
+        <div style={{background: '#000000'}} className="text-center">
+          <h1 id='inicio'><MilitaryTechIcon sx={{ fontSize: 50 }} color="primary"/>Lista De Comandantes de Esquadra</h1>
         </div>
         {comandante.length === 0 && <h1><Spinner animation="border" variant="success" />Carregando... </h1>}
 
     <Container>
       <div className="text-center">
-        <Link className='btn btn-success mb-2 butao' to={'/comandantes/create'}><AiOutlinePlus /> Inserir</Link>
+        <Link className='btn btn-success mb-2 butao' to={'/comandantes/create'}><PersonAddIcon /> Inserir</Link>
       </div>
       <Row>      
             {

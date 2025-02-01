@@ -4,10 +4,13 @@ import swal from 'sweetalert';
 import { Card, Col, ListGroup, Container, Row, Spinner } from 'react-bootstrap';
 import { Alert, Chip } from '@mui/material'
 import { Link } from 'react-router-dom';
-import { AiOutlinePlus, AiOutlineRollback } from 'react-icons/ai'
+import { AiOutlinePlus } from 'react-icons/ai'
 import { FcUp } from "react-icons/fc";
-import DeleteIcon from '@mui/icons-material/Delete';
-import EditRoundedIcon from '@mui/icons-material/EditRounded';
+import PaidIcon from '@mui/icons-material/Paid';
+import BorderColorIcon from '@mui/icons-material/BorderColor';
+import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+
 
 const ListaArmamentos = () => {
 
@@ -27,8 +30,8 @@ const ListaArmamentos = () => {
     }
   return (
     <div>
-        <div className='text-center'>
-            <h1 id='inicio'>Lista dos Armamentos</h1>
+        <div style={{background: '#000000' }} className='text-center'>
+            <h1 id='inicio'><PaidIcon sx={{ fontSize: 50 }} color="primary" />Lista dos Armamentos</h1>
         </div>
             {armamento.length === 0 && <h1><Spinner animation="border" variant="success" />Carregando... </h1>}
 
@@ -66,12 +69,12 @@ const ListaArmamentos = () => {
                                     <Chip
                                     label="Editar"
                                     color="success"
-                                    icon={<EditRoundedIcon />}
+                                    icon={<BorderColorIcon />}
                                     />
                                 </Link>{' '}
                                             
                                 <Chip
-                                    icon={<DeleteIcon />}
+                                    icon={<RemoveShoppingCartIcon />}
                                     color="error"
                                     label="Deletar"
                                     onClick={() => apagar(i)}
@@ -82,7 +85,7 @@ const ListaArmamentos = () => {
                     }
                 </Row>
                 <div className='text-center mb-3'>
-                    <Link to={-1} className='btn btn-danger'><AiOutlineRollback/> Voltar</Link>
+                    <Link to={-1} className='btn btn-danger'><KeyboardBackspaceIcon/> Voltar</Link>
                 </div>
                 <div className='text-center mb-3'>
                     <a href="#inicio"><button class="botao" > <FcUp /></button></a>

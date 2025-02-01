@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react'
-import { Button, Dropdown, DropdownButton, Form, InputGroup } from 'react-bootstrap'
-import ReactPlayer from 'react-player'
-import { FaCheck } from 'react-icons/fa'
-import { BsArrowLeft } from 'react-icons/bs'
+import React, { useEffect } from 'react';
+import { Button, Form, InputGroup } from 'react-bootstrap';
+import ReactPlayer from 'react-player';
+import { FaCheck } from 'react-icons/fa';
+import { BsArrowLeft } from 'react-icons/bs';
 import { useForm } from 'react-hook-form';
-import { Link, useNavigate, useParams } from 'react-router-dom'
-import { mask } from 'remask'
-import ComandatesService from '../../services/academico/ComandatesService'
-import ComandantesValidator from '../../validators/ComandantesValidator'
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import { mask } from 'remask';
+import ComandatesService from '../../services/academico/ComandatesService';
+import ComandantesValidator from '../../validators/ComandantesValidator';
+import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
 
 const Comandantes = () => {
 
@@ -50,7 +51,7 @@ const Comandantes = () => {
             </div>
             <Form className="mb-3"  style={{background: '#1C1C1C', color: 'white', paddingTop: "8px", paddingLeft: "12px", paddingRight: "12px", paddingBottom: "10px"}}>
                 <div className="text-center">
-                    <h1>Inserir Novo Comandante</h1>
+                    <h1><MilitaryTechIcon sx={{ fontSize: 50 }} color="primary"/>Inserir Novo Comandante</h1>
                 </div>  
                 <InputGroup className="mb-3">
                     <Form.Control
@@ -120,9 +121,11 @@ const Comandantes = () => {
                         <option value={"I"}>Inativo</option>
                     </Form.Select>
                 </Form.Group>
+                <div className="text-center mb-2 d-grid gap-2">
+                    <Button onClick={handleSubmit(salvar)} size="lg" variant="success"><FaCheck /> Salvar</Button>{' '}
+                </div>
             </Form>
             <div className="text-center mb-5" >
-                <Button onClick={handleSubmit(salvar)} className=' btn btn-success butao'><FaCheck /> Salvar</Button>{' '}
                 <Link to={-1} className='btn btn-danger butao'><BsArrowLeft />  Voltar</Link>
             </div>  
         </div>
