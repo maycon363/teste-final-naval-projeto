@@ -32,9 +32,9 @@ const TreinamentoLista = () => {
     
   return (
     <div>
-      <div style={{background: '#000000'}} className="text-center">
-        <h1 id='inicio'><TrackChangesIcon sx={{ fontSize: 50 }} color="primary"/>Lista De Navios nos Treinamentos</h1>
-      </div>
+    <div style={{background: '#000000'}} className="text-center">
+      <h1 id='inicio'><TrackChangesIcon sx={{ fontSize: 50 }} color="primary"/>Lista De Navios nos Treinamentos</h1>
+    </div>
     {treinamento.length === 0 && <h1><Spinner animation="border" variant="success" /> Carregando... </h1>}
     <Container>
       <div className="text-center">

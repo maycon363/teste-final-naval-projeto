@@ -126,6 +126,86 @@ code {
   padding-right: 25px;
 }
 
+/* Root */
+.root {
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.dark .root {
+  background-color: #1f2937; /* gray-800 */
+}
+
+.root-container {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+/* Group Link */
+.group-link {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  color: #6b7280; /* gray-500 */
+}
+
+.dark .group-link {
+  color: white;
+}
+
+.group-link-col {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.group-link a {
+  margin-right: 1rem;
+}
+
+.group-link a:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  .group-link a {
+    margin-right: 1.5rem;
+  }
+}
+
+.group-link a:hover {
+  text-decoration: underline;
+}
+
+/* Icon */
+.icon {
+  color: #6b7280; /* gray-500 */
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.dark .icon:hover {
+  color: white;
+}
+
+/* Title */
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6b7280; /* gray-500 */
+}
+
+.dark .title {
+  color: white;
+}
+
+
+
+
+
 
 
 

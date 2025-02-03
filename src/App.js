@@ -1,5 +1,6 @@
 import React  from 'react';
 import Menu from "./components/Menu";
+import Rodape from "./components/Rodape";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Container } from "react-bootstrap";
@@ -62,7 +63,8 @@ function App() {
               <Route path="/infor" element={<Infor />} />
 
             </Routes>
-          </Container>  
+          </Container>
+        <Rodape/>  
       </BrowserRouter>    
     </div>
   );

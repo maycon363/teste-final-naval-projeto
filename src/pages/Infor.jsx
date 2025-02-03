@@ -68,7 +68,7 @@ const data = [
 const Infor = () => {
   return (
     <Grid>
-        <Row>
+        <Row className='mb-3'>
             <div style={{background: '#000000', color: 'white',}} className='text-center'>
                 <h1>Informações de todos os tipos de Navios de guerra</h1>
             </div>
