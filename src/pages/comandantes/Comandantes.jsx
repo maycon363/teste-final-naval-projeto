@@ -47,7 +47,7 @@ const Comandantes = () => {
      return (
         <div>
             <div className='para mb-3'>
-                <ReactPlayer playing={true} loop={true} controls={false} url='https://youtu.be/xXzJhWt1gY4?t=31' />
+                <ReactPlayer playing={true} loop={true} controls={false} url='https://youtu.be/TMT1IIcjw8g' />
             </div>
             <Form className="mb-3"  style={{background: '#1C1C1C', color: 'white', paddingTop: "8px", paddingLeft: "12px", paddingRight: "12px", paddingBottom: "10px"}}>
                 <div className="text-center">

@@ -45,7 +45,7 @@ const Armamentos = () => {
         return (
         <div>
             <div className='para mb-3'>
-                <ReactPlayer playing={true} loop={true} controls={false} url='https://youtu.be/Rr4utWfl90A' />
+                <ReactPlayer playing={true} loop={true} controls={false} url='https://www.youtube.com/watch?v=Zsf38NYzo5Q' />
             </div>
             <div>
                 <Form className="mb-3" style={{background: '#1C1C1C', color: 'white', paddingTop: "8px", paddingLeft: "12px", paddingRight: "12px", paddingBottom: "10px"}}>          

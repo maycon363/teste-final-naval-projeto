@@ -47,7 +47,7 @@ const Construcao = () => {
     return (
         <div>
             <div className='para mb-3'>
-                <ReactPlayer playing={true} loop={true} controls={false} url='https://youtu.be/Rr4utWfl90A' />
+                <ReactPlayer playing={true} loop={true} controls={false} url='https://youtu.be/Mm7_Abtj8-c' />
             </div>   
             <Form className="mb-3" style={{background: '#1C1C1C', color: 'white', paddingTop: "8px", paddingLeft: "12px", paddingRight: "12px", paddingBottom: "10px"}}>
               <div className="text-center">

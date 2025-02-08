@@ -45,7 +45,7 @@ const Treinamento = () => {
   return (
     <div>
       <div className='para mb-3' >
-          <ReactPlayer playing={true} loop={true} controls={false} url='https://youtu.be/JhplELDnVYw' />
+          <ReactPlayer playing={true} loop={true} controls={false} url='https://www.youtube.com/watch?v=f9br6kd08x4' />
       </div>
       <Form className="mb-3"  style={{background: '#1C1C1C', color: 'white', paddingTop: "8px", paddingLeft: "12px", paddingRight: "12px", paddingBottom: "10px"}}>
         <div className="text-center">

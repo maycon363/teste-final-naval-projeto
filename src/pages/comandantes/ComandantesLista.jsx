@@ -1,5 +1,5 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React from 'react'
+import { useEffect } from 'react'
 import { useState } from 'react';
 import { Spinner, Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
 import {AiOutlineRollback} from 'react-icons/ai';
@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import swal from 'sweetalert';
 import ComandatesService from '../../services/academico/ComandatesService';
 import { FcUp } from "react-icons/fc";
-import { Chip } from '@mui/material';
+import { Chip } from '@mui/material'
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
 import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';

@@ -46,7 +46,7 @@ const Servico = () => {
   return (
     <div>
         <div className='para mb-3'>
-            <ReactPlayer playing={true} loop={true} controls={false} url='https://youtu.be/4ggq-zu3b20' />
+            <ReactPlayer playing={true} loop={true} controls={false} url='https://www.youtube.com/watch?v=77H-dL2EYzk' />
         </div>
           <div className="mb-3" style={{background: '#1C1C1C', color: 'white', paddingTop: "12px", paddingLeft: "12px", paddingRight: "12px", paddingBottom: "10px"}}>
             <Form>
