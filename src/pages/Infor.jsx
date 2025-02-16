@@ -61,6 +61,12 @@ const data = [
         funcao: 'Detectar, remover ou destruir minas navais, para garantir a segurança de embarcações e vias navegáveis',
         text: 'Os navios caça-minas são projetados para neutralizar minas navais, que são dispositivos explosivos colocados no mar ou em rios. Para isso, eles têm características que os ajudam a passar despercebidos pelas minas.'
     },
+    {
+        src: 'https://www.naval.com.br/blog/wp-content/uploads/2018/06/WAVESa.jpg',
+        title: 'Navios-tanque',
+        funcao: 'Os navios-tanque são importantes para o aumento do raio de ação das Forças Navais.',
+        text: 'Navios-Tanque são os postos de combustível da Esquadra no mar. Com eles, é possível realizar o reabastecimento dos diversos tipos de combustíveis utilizados pelos navios e aeronaves, em plena missão, sem a necessidade de atracar, aumentando assim o raio de ação e permitindo maior permanência das Forças Navais no mar.'
+    },
 
   ];
   

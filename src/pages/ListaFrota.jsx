@@ -155,7 +155,8 @@ const ListaFrota = () => {
                     {item.imgs === "14" && <Card.Img style={{ height: 35,  width: 60,}} src="https://imgsapp2.correiobraziliense.com.br/app/noticia_127983242361/2019/01/01/728103/20181231185546693631o.jpg" />}
                     {item.imgs === "13" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.naval.com.br/blog/wp-content/uploads/2015/04/FREMM-Carlo-Bergamini-foto-2-Marinha-Italiana.jpg" />}
                     {item.imgs === "12" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.naval.com.br/blog/wp-content/uploads/2023/02/BR71-MKII-corvette-1280x785.jpeg" />}
-                    {item.imgs === "11" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.naval.com.br/blog/wp-content/uploads/2023/08/E2EC35C3-4A2D-407E-8482-B7B7228F21EF.jpeg" />} 
+                    {item.imgs === "11" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.naval.com.br/blog/wp-content/uploads/2023/08/E2EC35C3-4A2D-407E-8482-B7B7228F21EF.jpeg" />}
+                    {item.imgs === "10" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.naval.com.br/blog/wp-content/uploads/2018/03/RFA-Tidesurge.jpg" />} 
                   </td>
                   <td>{item.missao}</td>
                   <td>{item.guerra}</td>

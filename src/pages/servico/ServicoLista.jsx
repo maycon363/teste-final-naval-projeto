@@ -45,7 +45,7 @@ const ServicoLista = () => {
           servico.map((item, i)=> (
             <Col key={i} md={4} className='ml-4 g-2 letra '  >
               <Card border="dark" style={{  color: "#000000", width: '18rem' }}>
-                  {item.imges === "erroA" && <Alert variant="filled" severity="error">Alerta, arma não Selecionada!!!</Alert>}
+                  {item.imgs === "erroA" && <Alert variant="filled" severity="error">Alerta, arma não Selecionada!!!</Alert>}
                   {item.imgs === "18" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2015/11/Russian-cruiser-RFS-Moskva-aerial.jpg" />}
                   {item.imgs === "17" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2023/10/CVN-69-USS-Dwight-D-Eisenhower-454.jpg" />}
                   {item.imgs === "16" && <Card.Img variant="top" src="https://www.airway.com.br/wp-content/uploads/2017/12/HMS_Ocean.jpg" />}
@@ -54,6 +54,7 @@ const ServicoLista = () => {
                   {item.imgs === "13" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2015/04/FREMM-Carlo-Bergamini-foto-2-Marinha-Italiana.jpg" />}
                   {item.imgs === "12" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2023/02/BR71-MKII-corvette-1280x785.jpeg" />}
                   {item.imgs === "11" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2023/08/E2EC35C3-4A2D-407E-8482-B7B7228F21EF.jpeg" />} 
+                  {item.imgs === "10" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2018/03/RFA-Tidesurge.jpg" />} 
                 <Card.Body>
                   <Card.Header style={{background: '#000000', color: 'white',}}><strong>{item.nome}</strong></Card.Header>
                 </Card.Body>

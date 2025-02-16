@@ -64,6 +64,7 @@ const Construcao = () => {
                     <option value={"23"}>Fragata</option>
                     <option value={"22"}>Coverta</option>
                     <option value={"21"}>Navio Patrulha</option>
+                    <option value={"20"}>Navio-tanque</option>
                 </Form.Select>
               </Form.Group> 
               <InputGroup className="mb-3" controlId="nome">
