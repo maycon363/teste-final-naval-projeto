@@ -65,6 +65,7 @@ const Servico = () => {
                   <option value={"12"}>Coverta</option>
                   <option value={"11"}>Navio Patrulha</option>
                   <option value={"10"}>Navio-tanque</option>
+                  <option value={"9"}>Navio Autônomo de Guerra</option>
                 </Form.Select>
               </Form.Group>
               <InputGroup className="mb-3">

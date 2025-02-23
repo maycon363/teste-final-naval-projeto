@@ -53,7 +53,8 @@ const ConstrucaoLista = () => {
                   {item.imges === "23" && <Card.Img variant="top" src="https://1.bp.blogspot.com/-SXRq6xmd9q8/Xq7y3zO2c6I/AAAAAAADNm4/CjMGNgXfE_IsPMefEOP4SFsTmec7dnFFACLcBGAsYHQ/s1600/A1.jpg" />}
                   {item.imges === "22" && <Card.Img variant="top" src="https://pbs.twimg.com/media/Fji3zYvWYAgQs7e?format=jpg&name=4096x4096" />}
                   {item.imges === "21" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2017/06/OPV-Damen.jpg" />}
-                  {item.imges === "20" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2018/03/RFA-Tidesurge.jpg" />} 
+                  {item.imges === "20" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2018/03/RFA-Tidesurge.jpg" />}
+                  {item.imges === "19" && <Card.Img variant="top" src="https://p.turbosquid.com/ts-thumb/Ef/1QJKWR/Vl/r_viewport_002/png/1624540910/600x600/fit_q87/d7d1ad69293948028c1ec1665a942ef09ee8e85c/r_viewport_002.jpg" />} 
                 <Card.Body>
                   <Card.Header style={{ background: '#000000', color: 'white',}}><strong>{item.nome}</strong></Card.Header>
                 </Card.Body>

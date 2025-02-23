@@ -55,6 +55,7 @@ const ServicoLista = () => {
                   {item.imgs === "12" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2023/02/BR71-MKII-corvette-1280x785.jpeg" />}
                   {item.imgs === "11" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2023/08/E2EC35C3-4A2D-407E-8482-B7B7228F21EF.jpeg" />} 
                   {item.imgs === "10" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2018/03/RFA-Tidesurge.jpg" />} 
+                  {item.imgs === "9" && <Card.Img variant="top" src="https://p.turbosquid.com/ts-thumb/Ef/1QJKWR/Vl/r_viewport_002/png/1624540910/600x600/fit_q87/d7d1ad69293948028c1ec1665a942ef09ee8e85c/r_viewport_002.jpg" />} 
                 <Card.Body>
                   <Card.Header style={{background: '#000000', color: 'white',}}><strong>{item.nome}</strong></Card.Header>
                 </Card.Body>

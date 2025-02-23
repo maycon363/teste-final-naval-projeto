@@ -148,15 +148,16 @@ const ListaFrota = () => {
                     <td style={{ alignContent: 'center', justifyContent: 'center', marginTop: 'auto', }}>{item.nome}</td>
                   </td>
                   <td>
-                    {item.imgs === "18" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.naval.com.br/blog/wp-content/uploads/2015/11/Russian-cruiser-RFS-Moskva-aerial.jpg" />}
-                    {item.imgs === "17" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.naval.com.br/blog/wp-content/uploads/2023/10/CVN-69-USS-Dwight-D-Eisenhower-454.jpg" />}
-                    {item.imgs === "16" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.airway.com.br/wp-content/uploads/2017/12/HMS_Ocean.jpg" />}
-                    {item.imgs === "15" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.naval.com.br/blog/wp-content/uploads/2015/01/Royal_Navy_Type_45_Destroyer_HMS_Dragon_MOD_45153124-e1524089086702.jpg" />}
-                    {item.imgs === "14" && <Card.Img style={{ height: 35,  width: 60,}} src="https://imgsapp2.correiobraziliense.com.br/app/noticia_127983242361/2019/01/01/728103/20181231185546693631o.jpg" />}
-                    {item.imgs === "13" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.naval.com.br/blog/wp-content/uploads/2015/04/FREMM-Carlo-Bergamini-foto-2-Marinha-Italiana.jpg" />}
-                    {item.imgs === "12" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.naval.com.br/blog/wp-content/uploads/2023/02/BR71-MKII-corvette-1280x785.jpeg" />}
-                    {item.imgs === "11" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.naval.com.br/blog/wp-content/uploads/2023/08/E2EC35C3-4A2D-407E-8482-B7B7228F21EF.jpeg" />}
-                    {item.imgs === "10" && <Card.Img style={{ height: 35,  width: 60,}} src="https://www.naval.com.br/blog/wp-content/uploads/2018/03/RFA-Tidesurge.jpg" />} 
+                    {item.imgs === "18" && <Card.Img style={{ height: 35,  width: 70}} src="https://www.naval.com.br/blog/wp-content/uploads/2015/11/Russian-cruiser-RFS-Moskva-aerial.jpg" />}
+                    {item.imgs === "17" && <Card.Img style={{ height: 35,  width: 70}} src="https://www.naval.com.br/blog/wp-content/uploads/2023/10/CVN-69-USS-Dwight-D-Eisenhower-454.jpg" />}
+                    {item.imgs === "16" && <Card.Img style={{ height: 35,  width: 70}} src="https://www.airway.com.br/wp-content/uploads/2017/12/HMS_Ocean.jpg" />}
+                    {item.imgs === "15" && <Card.Img style={{ height: 35,  width: 70}} src="https://www.naval.com.br/blog/wp-content/uploads/2015/01/Royal_Navy_Type_45_Destroyer_HMS_Dragon_MOD_45153124-e1524089086702.jpg" />}
+                    {item.imgs === "14" && <Card.Img style={{ height: 35,  width: 70}} src="https://imgsapp2.correiobraziliense.com.br/app/noticia_127983242361/2019/01/01/728103/20181231185546693631o.jpg" />}
+                    {item.imgs === "13" && <Card.Img style={{ height: 35,  width: 70}} src="https://www.naval.com.br/blog/wp-content/uploads/2015/04/FREMM-Carlo-Bergamini-foto-2-Marinha-Italiana.jpg" />}
+                    {item.imgs === "12" && <Card.Img style={{ height: 35,  width: 70}} src="https://www.naval.com.br/blog/wp-content/uploads/2023/02/BR71-MKII-corvette-1280x785.jpeg" />}
+                    {item.imgs === "11" && <Card.Img style={{ height: 35,  width: 70}} src="https://www.naval.com.br/blog/wp-content/uploads/2023/08/E2EC35C3-4A2D-407E-8482-B7B7228F21EF.jpeg" />}
+                    {item.imgs === "10" && <Card.Img style={{ height: 35,  width: 70}} src="https://www.naval.com.br/blog/wp-content/uploads/2018/03/RFA-Tidesurge.jpg" />}
+                    {item.imgs === "9" && <Card.Img style={{ height: 35,  width: 70}} src="https://p.turbosquid.com/ts-thumb/Ef/1QJKWR/Vl/r_viewport_002/png/1624540910/600x600/fit_q87/d7d1ad69293948028c1ec1665a942ef09ee8e85c/r_viewport_002.jpg" />} 
                   </td>
                   <td>{item.missao}</td>
                   <td>{item.guerra}</td>

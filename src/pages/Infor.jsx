@@ -67,6 +67,12 @@ const data = [
         funcao: 'Os navios-tanque são importantes para o aumento do raio de ação das Forças Navais.',
         text: 'Navios-Tanque são os postos de combustível da Esquadra no mar. Com eles, é possível realizar o reabastecimento dos diversos tipos de combustíveis utilizados pelos navios e aeronaves, em plena missão, sem a necessidade de atracar, aumentando assim o raio de ação e permitindo maior permanência das Forças Navais no mar.'
     },
+    {
+        src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzjK535WnqkkBRygc2dUDPemzz2_knG1LnHbVWF2semJZcnD3g3Ma-uQKYapTV29BhP1U&usqp=CAU',
+        title: 'Navio Autonomo de Guerra',
+        funcao: 'Os navios autônomos de guerra são embarcações não tripuladas projetadas para vigilância, defesa, ataque e apoio logístico, operando de forma independente em missões militares.',
+        text: 'Os navios autônomos de guerra são embarcações equipadas com inteligência artificial e sistemas de navegação avançados, capazes de operar sem tripulação para realizar missões estratégicas, como patrulhamento, vigilância, defesa e ataque, garantindo maior precisão, segurança e eficiência em operações militares.'
+    },
 
   ];
   
