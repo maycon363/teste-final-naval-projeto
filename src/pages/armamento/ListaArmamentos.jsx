@@ -5,7 +5,6 @@ import { Card, Col, ListGroup, Container, Row, Spinner } from 'react-bootstrap';
 import { Alert, Chip } from '@mui/material'
 import { Link } from 'react-router-dom';
 import { AiOutlinePlus } from 'react-icons/ai'
-import { FcUp } from "react-icons/fc";
 import PaidIcon from '@mui/icons-material/Paid';
 import BorderColorIcon from '@mui/icons-material/BorderColor';
 import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
@@ -18,7 +17,7 @@ const ListaArmamentos = () => {
 
     useEffect(() => {
 
-        setArmamento(ArmamentosService.getAll())
+    setArmamento(ArmamentosService.getAll())
 
     }, [])
 
@@ -31,7 +30,7 @@ const ListaArmamentos = () => {
   return (
     <div>
         <div style={{background: '#000000' }} className='text-center'>
-            <h1 id='inicio'><PaidIcon sx={{ fontSize: 50 }} color="primary" />Lista dos Armamentos</h1>
+            <h1><PaidIcon sx={{ fontSize: 50 }} color="primary" />Lista dos Armamentos</h1>
         </div>
             {armamento.length === 0 && <h1><Spinner animation="border" variant="success" />Carregando... </h1>}
 
@@ -86,9 +85,6 @@ const ListaArmamentos = () => {
                 </Row>
                 <div className='text-center mb-3'>
                     <Link to={-1} className='btn btn-danger'><KeyboardBackspaceIcon/> Voltar</Link>
-                </div>
-                <div className='text-center mb-3'>
-                    <a href="#inicio"><button class="botao" > <FcUp /></button></a>
                 </div>
             </Container>
         </div>

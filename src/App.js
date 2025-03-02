@@ -21,6 +21,7 @@ import ListaArmamentos from "./pages/armamento/ListaArmamentos";
 import Armamentos from "./pages/armamento/Armamentos";
 import SolicitarServico from "./pages/SolicitarServico";
 import Infor from "./pages/Infor";
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
 
             </Routes>
           </Container>
+          <ScrollToTop />
         <Rodape/>  
       </BrowserRouter>    
     </div>

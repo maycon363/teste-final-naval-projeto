@@ -6,7 +6,6 @@ import TreinamentoService from '../../services/academico/TreinamentoService'
 import { Alert, Chip } from '@mui/material'
 import { AiOutlineRollback, AiOutlinePlus } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
-import { FcUp } from "react-icons/fc";
 import swal from 'sweetalert';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
@@ -36,11 +35,11 @@ const TreinamentoLista = () => {
       <h1 id='inicio'><TrackChangesIcon sx={{ fontSize: 50 }} color="primary"/>Lista De Navios nos Treinamentos</h1>
     </div>
     {treinamento.length === 0 && <h1><Spinner animation="border" variant="success" /> Carregando... </h1>}
-    <Container>
-      <div className="text-center">
-        <Link className='btn btn-success mb-3 butao' to={'/treinamento/create'}><AiOutlinePlus /> Inserir</Link>
-      </div>
-      <Row>
+      <Container>
+        <div className="text-center">
+          <Link className='btn btn-success mb-3 butao' to={'/treinamento/create'}><AiOutlinePlus /> Inserir</Link>
+        </div>
+        <Row>
           {
             treinamento.map((item, i)=> (
               <Col key={i} D className='ml-4 g-2 letra '  >
@@ -86,15 +85,12 @@ const TreinamentoLista = () => {
               </Col>
             ))
           }         
-      </Row>
-      <div className='text-center mb-3'>
-        <Link to={-1} className='btn btn-danger'><AiOutlineRollback/> Voltar</Link>
-      </div>
-      <div className='text-center mb-3'>
-        <a href="#inicio"><button class="botao" > <FcUp /></button></a>
-      </div>
-    </Container>
-  </div>
-    );
+        </Row>
+        <div className='text-center mb-3'>
+          <Link to={-1} className='btn btn-danger'><AiOutlineRollback/> Voltar</Link>
+        </div>
+      </Container>
+    </div>
+  );
 };
 export default TreinamentoLista

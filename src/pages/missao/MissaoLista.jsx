@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import MissaoService from '../../services/academico/MissaoService'
 import { AiOutlinePlus } from 'react-icons/ai'
 import { Chip } from '@mui/material'
-import { FcUp } from "react-icons/fc";
 import { AiOutlineRollback } from 'react-icons/ai'
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
@@ -32,7 +31,7 @@ const MissaoLista = () => {
   return (
     <div>
       <div style={{background: '#000000'}} className="text-center">
-        <h1 id='inicio'><PrivacyTipIcon sx={{ fontSize: 50 }} color="primary"/>Lista De Navios em Missão</h1>
+        <h1><PrivacyTipIcon sx={{ fontSize: 50 }} color="primary"/>Lista De Navios em Missão</h1>
       </div>
     {missao.length === 0 && <h1><Spinner animation="border" variant="success" /> Carregando... </h1>}
     <Container>
@@ -86,9 +85,6 @@ const MissaoLista = () => {
       </Row>
       <div className='text-center mb-3'>
         <Link to={-1} className='btn btn-danger'><AiOutlineRollback/> Voltar</Link>
-      </div>
-      <div className='text-center mb-3'>
-        <a href="#inicio"><button class="botao" > <FcUp /></button></a>
       </div>
     </Container>
   </div>

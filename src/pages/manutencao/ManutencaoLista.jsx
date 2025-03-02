@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom'
 import {AiOutlineRollback} from 'react-icons/ai'
 import { AiOutlinePlus } from 'react-icons/ai'
 import swal from 'sweetalert';
-import { FcUp } from "react-icons/fc";
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
 import EngineeringIcon from '@mui/icons-material/Engineering';
@@ -34,7 +33,7 @@ const ManutencaoLista = () => {
   return (
     <div>
       <div style={{background: '#000000'}} className="text-center">
-        <h1 id='inicio'><EngineeringIcon sx={{ fontSize: 50 }} color="primary"/>Lista De Navios em Manutenção</h1>
+        <h1><EngineeringIcon sx={{ fontSize: 50 }} color="primary"/>Lista De Navios em Manutenção</h1>
       </div>
     {manutencao.length === 0 && <h1><Spinner animation="border" variant="success" />Carregando... </h1>}
 
@@ -90,9 +89,6 @@ const ManutencaoLista = () => {
       </Row>
       <div className='text-center mb-3'>
         <Link to={-1} className='btn btn-danger'><AiOutlineRollback/> Voltar</Link>
-      </div>
-      <div className='text-center mb-3'>
-        <a href="#inicio"><button class="botao" > <FcUp /></button></a>
       </div>
     </Container>
   </div>
