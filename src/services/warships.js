@@ -32,7 +32,7 @@ const warships = [
       velocidade: "Média",
     },
     icon: <SailingIcon />,
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BPC_Dixmude.jpg/1200px-BPC_Dixmude.jpg"
+    src: "https://www.naval.com.br/blog/wp-content/uploads/2021/02/BPC-Tonnerre.jpg"
   },
   {
     type: "Cruzador",

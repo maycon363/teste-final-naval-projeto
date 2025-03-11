@@ -73,6 +73,3 @@ function App() {
 }
 
 export default App;
-
-
-// <Route path="/professores" element={<Professor />} /> aqui coloco a lista
