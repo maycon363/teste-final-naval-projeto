@@ -22,6 +22,7 @@ import Armamentos from "./pages/armamento/Armamentos";
 import SolicitarServico from "./pages/SolicitarServico";
 import Infor from "./pages/Infor";
 import ScrollToTop from './components/ScrollToTop';
+import ArmamentosNaval from './pages/ArmamentosNaval';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Routes>
               <Route path="/" element={<ListaFrota />} />
               <Route path="/solicita" element={<SolicitarServico />} />
+              <Route path="/armamento" element={<ArmamentosNaval />} />
 
               <Route path="/construcao" element={<ConstrucaoLista />} />
               <Route path="/construcao/:id" element={<Construcao />} />

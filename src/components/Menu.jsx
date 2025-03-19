@@ -12,9 +12,11 @@ const Menu = () => {
           <Nav className="me-auto">
             <Link className="nav-link" to="/">Lista Geral</Link>
             <Link className="nav-link" to="/solicita">Solicitação de Serviços</Link>
-            <Link className="nav-link" to="/infor">Informações dos Navios</Link>
             <Dropdown>
               <NavDropdown title="Serviços" className='show' id="basic-nav-dropdown">
+                <Link className="dropdown-item" to="/armamento">Informações dos armamentos</Link>
+                <Link className="dropdown-item" to="/infor">Informações dos Navios</Link>
+                <NavDropdown.Divider />
                 <Link className="dropdown-item" to="/manutencao">Manutenção</Link>
                 <Link className="dropdown-item" to="/construcao">Construção</Link>
                 <Link className="dropdown-item" to="/missao">Missao</Link>

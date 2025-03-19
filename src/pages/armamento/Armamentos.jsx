@@ -61,8 +61,9 @@ const Armamentos = () => {
                             <option value={"mae"}>Mísseis Anti-aéreo</option>
                             <option value={"t"}>Torpedos</option>
                             <option value={"m"}>Metralhadora .50</option>
-                            <option value={"ca"}>Defesa Anti-aérea</option>
+                            <option value={"ca"}>Arma anti-aérea</option>
                             <option value={"da"}>Drone De Ataque</option>
+                            <option value={"lf"}>Lançador de Foguetes</option>
                         </Form.Select>
                     </Form.Group>
                     <InputGroup className="mb-3">

@@ -61,6 +61,7 @@ const ListaArmamentos = ({ loading }) => {
                                     {item.imges === "m" && <Card.Img variant="top" src="https://www.naval.com.br/blog/wp-content/uploads/2023/06/Visitacao-ao-NPaOc-Araguari-do-Grupamento-de-Patrulha-Naval-do-Nordeste-22-1280x721.jpg" />}
                                     {item.imges === "ca" && <Card.Img variant="top" src="https://cdn1.sputniknewsbr.com.br/img/946/88/9468885_0:0:1025:577_1280x0_80_0_0_dcbac1291a91dc07b2a70902dcbf8f06.jpg" />}
                                     {item.imges === "da" && <Card.Img variant="top" src="https://www.aereo.jor.br/wp-content/uploads//2022/11/Bayraktar-Kizilelma.jpg" />}
+                                    {item.imges === "lf" && <Card.Img variant="top" src="https://live.staticflickr.com/2821/11730086453_d0467035b4_b.jpg" />}
                                     <Card.Body>
                                         <Card.Header style={{ background: '#000000', color: 'white' }}><strong>{item.nome}</strong></Card.Header>
                                     </Card.Body>
