@@ -27,5 +27,5 @@ class InforService {
         localStorage.setItem('infor', JSON.stringify(infor))
     }
 }
-
-export default new InforService()
+const iorService = new InforService();
+export default iorService;

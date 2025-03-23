@@ -27,4 +27,5 @@ class TreinamentoService {
         localStorage.setItem('treinamento', JSON.stringify(treinamento))
     }
 }
-export default new TreinamentoService()
+const treinamentoService = new TreinamentoService();
+export default treinamentoService;

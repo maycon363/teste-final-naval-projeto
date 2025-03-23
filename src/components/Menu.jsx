@@ -1,36 +1,76 @@
-import React from 'react'
-import { Card, Container, Dropdown, Nav, Navbar, NavDropdown } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { Shield, Ship, Wrench, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <div>
-      <Navbar bg="dark" variant="dark" className="mb-3">
-        <Container>
-          <Card.Img style={{ height: 40,  width: 40,}} src="https://logodownload.org/wp-content/uploads/2018/01/marinha-brasil-logo.png"/>
-          <Navbar.Brand href="/">Frota Naval Remake</Navbar.Brand>
-          <Nav className="me-auto">
-            <Link className="nav-link" to="/">Lista Geral</Link>
-            <Link className="nav-link" to="/solicita">Solicitação de Serviços</Link>
-            <Dropdown>
-              <NavDropdown title="Serviços" className='show' id="basic-nav-dropdown">
-                <Link className="dropdown-item" to="/armamento">Informações dos armamentos</Link>
-                <Link className="dropdown-item" to="/infor">Informações dos Navios</Link>
-                <NavDropdown.Divider />
-                <Link className="dropdown-item" to="/manutencao">Manutenção</Link>
-                <Link className="dropdown-item" to="/construcao">Construção</Link>
-                <Link className="dropdown-item" to="/missao">Missao</Link>
-                <Link className="dropdown-item" to="/treinamento">Treinamento</Link>
-                <Link className="dropdown-item" to="/servico">Serviço</Link>
-                <Link className="dropdown-item" to="/comandantes">Comandantes</Link>
-                <Link className="dropdown-item" to="/armamentos">Armamentos</Link>
-              </NavDropdown>
-            </Dropdown>
-          </Nav>
-        </Container>
-      </Navbar>
-    </div>
-  )
-}
+    <Navbar bg="dark" variant="dark" expand="lg" className="mb-3 px-3">
+      <Container>
+        <Navbar.Brand as={Link} to="/">
+          <img
+            src="https://logodownload.org/wp-content/uploads/2018/01/marinha-brasil-logo.png"
+            alt="Logo"
+            style={{ height: 40, width: 40, marginRight: 10 }}
+          />
+          Frota Naval Remake
+        </Navbar.Brand>
 
-export default Menu
+        <Navbar.Toggle aria-controls="navbar-nav" />
+
+        <Navbar.Collapse id="navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link as={Link} to="/">Lista Geral</Nav.Link>
+            <Nav.Link as={Link} to="/solicita">Solicitação de Serviços</Nav.Link>
+
+            <NavDropdown title="Outros" id="basic-nav-dropdown">
+            <NavDropdown.Header>📌 Informações</NavDropdown.Header>
+              <NavDropdown.Item as={Link} to="/armamento">
+                <Shield size={16} className="me-2" />
+                Armamentos
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/infor">
+                <Ship size={16} className="me-2" />
+                Navios
+              </NavDropdown.Item>
+
+              <NavDropdown.Divider />
+
+              <NavDropdown.Header>🛠️ Serviços</NavDropdown.Header>
+              <NavDropdown.Item as={Link} to="/Armamentos">
+                <Shield size={16} className="me-2" />
+                Armamentos
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/manutencao">
+                <Wrench size={16} className="me-2" />
+                Manutenção
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/construcao">
+                🏗️ Construção
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/missao">
+                🚀 Missão
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/treinamento">
+                🎯 Treinamento
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/servico">
+                📋 Serviço
+              </NavDropdown.Item>
+
+              <NavDropdown.Divider />
+
+              <NavDropdown.Header>⚓ Administração</NavDropdown.Header>
+              <NavDropdown.Item as={Link} to="/comandantes">
+                <Users size={16} className="me-2" />
+                Comandantes
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
+
+export default Menu;

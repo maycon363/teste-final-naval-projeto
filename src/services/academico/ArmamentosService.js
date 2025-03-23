@@ -1,4 +1,3 @@
-
 class ArmamentosService {
     getAll(){
         const armamentos = localStorage.getItem('armamentos')
@@ -17,7 +16,6 @@ class ArmamentosService {
     }
 
     update(id, dados){
-        
         const armamentos = this.getAll()
         armamentos.splice(id, 1, dados)
         localStorage.setItem('armamentos', JSON.stringify(armamentos))
@@ -30,4 +28,5 @@ class ArmamentosService {
     }
 }
 
-export default new ArmamentosService()
+const armamentosService = new ArmamentosService();
+export default armamentosService;

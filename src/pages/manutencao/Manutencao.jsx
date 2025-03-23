@@ -88,7 +88,7 @@ const Manutencao = () => {
             {...register("custo", manutencaoValidator.custo)}
             placeholder="Informe o Investimento"
             aria-label="Informe o Investimento"
-            type="number"
+            type="text"
             />
           </InputGroup>
           {errors.custo && <p style={{color: "OrangeRed", background: "Black", border: "15px", borderBlock: "10px"}}>{errors.custo.message}</p>}

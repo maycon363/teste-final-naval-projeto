@@ -1,4 +1,3 @@
-
 class ComandatesService {
     getAll(){
         const comandantes = localStorage.getItem('comandantes')
@@ -29,4 +28,5 @@ class ComandatesService {
     }
 }
 
-export default new ComandatesService()
+const comandantesService = new ComandatesService();
+export default comandantesService;

@@ -28,4 +28,5 @@ class ConstrucaoService {
     }
 }
 
-export default new ConstrucaoService()
+const cnstrucaoService = new ConstrucaoService();
+export default cnstrucaoService;

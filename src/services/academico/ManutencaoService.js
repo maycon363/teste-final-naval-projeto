@@ -29,4 +29,5 @@ class ManutencaoService {
     }
 }
 
-export default new ManutencaoService()
+const MnutencaoService = new ManutencaoService();
+export default MnutencaoService;

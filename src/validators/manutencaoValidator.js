@@ -39,7 +39,7 @@ const manutencaoValidator = {
     custo: {
         required: "O campo Investimento é Obrigatório",
         minLength: {
-            value: 6,
+            value: 2,
             message: "Qtd mínima de caracteres não informado"
         },
         maxLength: {

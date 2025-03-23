@@ -27,4 +27,6 @@ class MissaoService {
         localStorage.setItem('missao', JSON.stringify(missao))
     }
 }
-export default new MissaoService()
+
+const missaoService = new MissaoService();
+export default missaoService;

@@ -27,4 +27,6 @@ class ServicoService {
         localStorage.setItem('servico', JSON.stringify(servico))
     }
 }
-export default new ServicoService()
+
+const servicoService = new ServicoService();
+export default servicoService;
